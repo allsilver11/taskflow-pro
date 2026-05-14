@@ -1,0 +1,20 @@
+/* 시스템 폰트 스택 — 03-design.md 디자인 토큰 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* datetime-local 입력 다크모드 아이콘 색상 보정 */
+.dark input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* 모달 진입 애니메이션 */
+#modal-overlay:not(.hidden) > div:last-child,
+#delete-overlay:not(.hidden) > div:last-child {
+  animation: modal-in 0.15s ease-out;
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.96) translateY(4px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
