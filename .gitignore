@@ -44,6 +44,14 @@ desktop.ini
 coverage/
 .nyc_output/
 
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.db
+
 # Misc
 *.pem
 .vercel
